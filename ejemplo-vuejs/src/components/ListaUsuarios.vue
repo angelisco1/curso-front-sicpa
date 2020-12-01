@@ -1,5 +1,6 @@
 <template>
   <div>
+    <h1>Usuarios</h1>
     <!-- <input type="text" :placeholder="usuarios[0].nombre">
     <textarea v-bind:rows="numRows">
     </textarea> -->
@@ -14,6 +15,8 @@
     ></app-usuario>
     <!-- <app-usuario></app-usuario> -->
     <input type="text" v-model="usuarios[0].nombre">
+    <hr>
+    <router-view></router-view>
   </div>
 </template>
 
