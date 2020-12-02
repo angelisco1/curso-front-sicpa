@@ -1,17 +1,28 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import Contador from './components/Contador';
+import ContadorFn from './components/ContadorFn';
+import ListaSugus from './components/ListaSugus';
+import MisDatos from './components/MisDatos';
+import App from './pages/App';
+import { BrowserRouter } from 'react-router-dom';
 
 
-class App extends React.Component {
+class Root extends React.Component {
   render() {
     const nombre = 'Angel!';
 
     return (
       <div>
-        <h1>Hola {nombre}</h1>
+        {/* <h1>Hola {nombre}</h1>
         <input type="text" placeholder={nombre} />
         <Contador />
+        <ContadorFn />
+        <ListaSugus />
+        <MisDatos /> */}
+        <BrowserRouter>
+          <App />
+        </BrowserRouter>
       </div>
     )
   }
@@ -36,4 +47,4 @@ class App extends React.Component {
 // );
 
 
-ReactDOM.render(<App />, document.getElementById('root'))
+ReactDOM.render(<Root />, document.getElementById('root'))
