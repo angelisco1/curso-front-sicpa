@@ -1,0 +1,10 @@
+<button type="button" (click)="decrementar()">-</button>
+<span>Cuenta: {{cuenta}}</span>
+<button type="button" (click)="incrementar()">+</button>
+
+<input type="number" [placeholder]="cuenta">
+<!-- <input type="number" placeholder="{{cuenta}}"> -->
+
+<input type="text" [value]="nombre" (input)="cambiaNombre($event)">
+<p>Nombre: {{nombre}}</p>
+<input type="text" [(ngModel)]="nombre">

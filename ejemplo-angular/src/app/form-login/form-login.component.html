@@ -1,0 +1,27 @@
+<form (ngSubmit)="login(formulario)" #formulario="ngForm">
+
+  <div>
+    <label for="username">Username</label>
+    <input
+      type="text"
+      id="username"
+      name="username"
+      [ngModel]="datosUsuario.username"
+      required
+      minlength="4"
+    >
+  </div>
+  <div>
+    <label for="password">Password</label>
+    <input
+      type="password"
+      id="password"
+      name="password"
+      [ngModel]="datosUsuario.password"
+      required
+    >
+  </div>
+
+  <button type="submit" [disabled]="formulario.invalid">Login</button>
+
+</form>

@@ -6,6 +6,7 @@ import ListaSugus from './components/ListaSugus';
 import MisDatos from './components/MisDatos';
 import App from './pages/App';
 import { BrowserRouter } from 'react-router-dom';
+import CmpFragment from './components/CmpFragment';
 
 
 class Root extends React.Component {
@@ -13,16 +14,17 @@ class Root extends React.Component {
     const nombre = 'Angel!';
 
     return (
-      <div>
+      <div id="div1">
         {/* <h1>Hola {nombre}</h1>
         <input type="text" placeholder={nombre} />
         <Contador />
         <ContadorFn />
         <ListaSugus />
         <MisDatos /> */}
-        <BrowserRouter>
+        {/* <BrowserRouter>
           <App />
-        </BrowserRouter>
+        </BrowserRouter> */}
+        <CmpFragment />
       </div>
     )
   }

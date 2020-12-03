@@ -1,0 +1,5 @@
+<!-- <div [ngStyle]="{backgroundColor: getColorFondo()}"> -->
+<div [ngStyle]="getStyles()">
+  <h3>{{tarea.title}}</h3>
+  <p>{{tarea.completed ? 'Completada' : 'Por hacer'}}</p>
+</div>

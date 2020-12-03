@@ -1,0 +1,22 @@
+<h1>Lista de tareas</h1>
+
+<!-- <app-oferta [tarea]="tarea"></app-oferta>
+<app-oferta></app-oferta> -->
+
+<app-oferta
+  *ngFor="let t of tareas"
+  [tarea]="t"
+></app-oferta>
+
+
+<hr>
+
+<button type="button" (click)="toggleMostrarCompletadas()">Mostrar completadas</button>
+
+<div *ngIf="mostrarTareasCompletas">
+  <h2>Completadas</h2>
+  <app-oferta
+    *ngFor="let t of tareas"
+    [tarea]="t"
+  ></app-oferta>
+</div>
